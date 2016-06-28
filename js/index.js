@@ -6,37 +6,37 @@ function start() {
 
 function setBackground(e) {
 	e.preventDefault();
-	
+
 	//declaring variable for city
 	var city = $("#city-type").val();
 
 	//checking if city variable matches supplied strings for New York
 	if(city === "New York" || city === "New York City" || city === "NYC") {
-		//SET BACKGROUND to nyc.jpg
+		//set background to .nyc class
 		$("body").attr("class","nyc");
 	}
 	
 	//checking if city variable matches supplied strings for San Francisco	
 	else if(city === "San Francisco" || city === "SF" || city === "Bay Area") {
-		//SET BACKGROUND to sf.jpg
+		//set background to .sf class
 		$("body").attr("class","sf");
 	}
 
 	//checking if city variable matches supplied strings for Los Angeles
 	else if(city === "Los Angeles" || city === "LA" || city === "LAX") {
-		//SET BACKGROUND to la.jpg
+		//set background to .la class
 		$("body").attr("class","la");
 	}
 	
 	//checking if city variable matches supplied strings for Austin
 	else if(city === "Austin" || city === "ATX") {
-		//SET BACKGROUND to austin.jpg
+		//set background to .austin class
 		$("body").attr("class","austin");
 	}
     
     //checking if city variable matches supplied strings for Sydney
 	else if(city === "Sydney" || city ===  "SYD") {
-		//SET BACKGROUND to sydney.jpg
+		//set background to .sydney class
 		$("body").attr("class","sydney");
 	}
 }
